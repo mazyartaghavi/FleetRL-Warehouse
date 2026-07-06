@@ -1,0 +1,27 @@
+
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+.conda/
+
+# Runtime and generated artifacts
+artifacts/*.zip
+artifacts/*_smoke_test*
+artifacts/*.pt
+artifacts/*.pth
+artifacts/*.ckpt
+artifacts/tensorboard/
+runs/
+
+# Operating system files
+.DS_Store
+Thumbs.db
