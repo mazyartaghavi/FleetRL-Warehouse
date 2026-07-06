@@ -163,9 +163,29 @@ python -m pytest -v
 
 The lightweight unit suite checks deterministic resets, collisions, pickup/delivery transitions, observation size, tabular updates, model serialization, and rendering.
 
-## CV-ready description
 
-See [docs/CV_ENTRY.md](docs/CV_ENTRY.md).
+
+
+
+
+### Comparison Figures
+
+#### Task Completion
+
+![Completion rate comparison](docs/assets/completion_rate_comparison.png)
+
+#### Collision Attempts
+
+![Collision comparison](docs/assets/collision_comparison.png)
+
+#### Episode Efficiency
+
+![Steps comparison](docs/assets/steps_comparison.png)
+
+
+
+
+
 
 ## Limitations
 
