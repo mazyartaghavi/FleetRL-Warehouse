@@ -1,5 +1,7 @@
 # FleetRL-Warehouse
 
+[![Python tests](https://github.com/mazyartaghavi/FleetRL-Warehouse/actions/workflows/tests.yml/badge.svg)](https://github.com/mazyartaghavi/FleetRL-Warehouse/actions/workflows/tests.yml)
+
 **Cooperative Multi-Robot Reinforcement Learning for Warehouse Logistics with ROS 2 and Gazebo**
 
 FleetRL-Warehouse is a portfolio-grade research and engineering project in which a fleet of differential-drive mobile robots cooperates to collect packages, avoid collisions, and deliver orders in a warehouse. It provides a fast Python simulator for learning and benchmarking, plus a ROS 2 / Gazebo deployment layer for robot communication, task allocation, policy execution, and independent safety supervision.
