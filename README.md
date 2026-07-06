@@ -245,6 +245,26 @@ In a two-robot, two-task warehouse benchmark, the final 100 training episodes pr
 
 In this run, SARSA achieved a slightly higher completion rate, fewer collision attempts, fewer average steps, and a higher final reward. This is consistent with SARSA’s on-policy learning behavior, which can produce more cautious policies in environments where unsafe movements are penalized.
 
+
+
+## Q-learning and SARSA Comparison Figures
+
+### Task Completion
+
+![Completion rate comparison](docs/assets/completion_rate_comparison.png)
+
+### Collision Attempts
+
+![Collision comparison](docs/assets/collision_comparison.png)
+
+### Episode Efficiency
+
+![Steps comparison](docs/assets/steps_comparison.png)
+
+
+
+
+
 ## Safety Design
 
 The ROS 2 deployment layer separates policy execution from safety supervision. The learned policy produces a proposed command, while a dedicated safety supervisor independently monitors lidar data and can suppress unsafe forward motion before the command reaches the simulated robot controller.
