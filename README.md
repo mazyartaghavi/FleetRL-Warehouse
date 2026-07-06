@@ -161,9 +161,7 @@ python -m pytest -v
 
 The lightweight unit suite checks deterministic resets, collisions, pickup/delivery transitions, observation size, tabular updates, model serialization, and rendering.
 
-## CV-ready description
-
-See [docs/CV_ENTRY.md](docs/CV_ENTRY.md).
+In a two-robot/two-task warehouse benchmark, SARSA achieved 95% task completion with 0.05 mean collisions over the final 100 episodes, compared with 93% completion and 0.12 mean collisions for Q-learning.
 
 ## Limitations
 
