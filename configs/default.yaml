@@ -1,0 +1,17 @@
+environment:
+  width: 12
+  height: 10
+  n_robots: 3
+  n_tasks: 5
+  max_steps: 250
+  seed: 7
+reward:
+  step: -0.05
+  collision: -1.0
+  invalid_action: -0.20
+  pickup: 1.0
+  delivery: 10.0
+  completion: 20.0
+training:
+  tabular_episodes: 500
+  deep_timesteps: 100000

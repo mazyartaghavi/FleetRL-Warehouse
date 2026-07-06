@@ -1,0 +1,38 @@
+{
+  "q_learning": {
+    "mean_reward": {
+      "mean": 36.233699999999985,
+      "population_std": 3.760574817763904
+    },
+    "mean_completion_rate": {
+      "mean": 0.88,
+      "population_std": 0.0696419413859206
+    },
+    "mean_collisions": {
+      "mean": 0.04,
+      "population_std": 0.03741657386773942
+    },
+    "mean_steps": {
+      "mean": 49.79,
+      "population_std": 6.265971592658237
+    }
+  },
+  "sarsa": {
+    "mean_reward": {
+      "mean": 34.24519999999998,
+      "population_std": 4.597094980528464
+    },
+    "mean_completion_rate": {
+      "mean": 0.83,
+      "population_std": 0.09407443861113389
+    },
+    "mean_collisions": {
+      "mean": 0.02,
+      "population_std": 0.04
+    },
+    "mean_steps": {
+      "mean": 51.24,
+      "population_std": 7.005098143495209
+    }
+  }
+}

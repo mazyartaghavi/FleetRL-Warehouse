@@ -1,0 +1,15 @@
+fleet_coordinator:
+  ros__parameters:
+    robot_names: [robot_0, robot_1, robot_2]
+    goal_tolerance: 0.45
+
+policy_defaults:
+  linear_speed: 0.55
+  angular_speed: 1.0
+  goal_tolerance: 0.35
+  cell_size: 1.0
+  origin_x: -6.0
+  origin_y: -5.0
+
+safety_defaults:
+  stop_distance: 0.42

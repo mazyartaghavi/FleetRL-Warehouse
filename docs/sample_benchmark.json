@@ -1,0 +1,7 @@
+{
+  "command": "fleetrl train-tabular --algorithm q_learning --episodes 1500 --eval-episodes 20 --robots 2 --tasks 2 --max-steps 100 --seed 7",
+  "mean_reward": 31.67099999999998,
+  "mean_completion_rate": 0.8,
+  "mean_collisions": 0.05,
+  "mean_steps": 59.3
+}

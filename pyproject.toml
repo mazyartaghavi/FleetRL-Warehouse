@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fleetrl-warehouse"
+version = "0.1.0"
+description = "Cooperative multi-robot reinforcement learning for warehouse logistics with ROS 2 and Gazebo integration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Mazyar Taghavi"}]
+dependencies = [
+  "numpy>=1.26,<3",
+]
+
+[project.optional-dependencies]
+deep = [
+  "gymnasium>=1.0,<2",
+  "stable-baselines3>=2.5,<3",
+  "torch>=2.2",
+  "tensorboard>=2.16",
+]
+visual = [
+  "matplotlib>=3.8",
+  "pygame>=2.5",
+]
+dev = [
+  "pytest>=8",
+  "pytest-cov>=5",
+  "ruff>=0.9",
+]
+all = [
+  "gymnasium>=1.0,<2",
+  "stable-baselines3>=2.5,<3",
+  "torch>=2.2",
+  "tensorboard>=2.16",
+  "matplotlib>=3.8",
+  "pygame>=2.5",
+  "pytest>=8",
+  "pytest-cov>=5",
+  "ruff>=0.9",
+]
+
+[project.scripts]
+fleetrl = "fleetrl_warehouse.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

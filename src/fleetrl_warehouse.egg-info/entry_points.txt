@@ -1,0 +1,2 @@
+[console_scripts]
+fleetrl = fleetrl_warehouse.cli:main
